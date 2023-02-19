@@ -52,9 +52,11 @@ Rendering Steps
 ===============
 
 1. Ensure you have deployed the Solidity contracts to mochi, by following this README:
+
 `./solidity/README.md`
 
 2. Run the project, passing in the CityLights Token ID you wish to render:
+
 `dotnet run {TOKEN_ID}`
 
 The rendering service will:
