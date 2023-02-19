@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityLights.Renderer", "CityLights.Renderer\CityLights.Renderer.csproj", "{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CityLights", "CityLights\CityLights.csproj", "{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kohi.Composer", "lib\kohi-composer\src\Kohi.Composer\Kohi.Composer\Kohi.Composer.csproj", "{BF9346B7-DD44-4266-BC3C-7016ED285203}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8F13DAF7-E8AB-4F37-BC96-C8A16C81767E}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Debug|x64.Build.0 = Debug|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Release|x64.ActiveCfg = Release|Any CPU
+		{C3AA5E6F-792E-4022-98FD-18F157AD0AC6}.Release|x64.Build.0 = Release|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Debug|x64.Build.0 = Debug|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Release|x64.ActiveCfg = Release|Any CPU
+		{3D29D11A-1DCD-4B3D-9DCA-7DA90FAC8D44}.Release|x64.Build.0 = Release|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Debug|x64.Build.0 = Debug|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Release|x64.ActiveCfg = Release|Any CPU
+		{BF9346B7-DD44-4266-BC3C-7016ED285203}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B63FE9E0-8F8C-4798-8775-864FD31D7444}
+	EndGlobalSection
+EndGlobal

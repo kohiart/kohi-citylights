@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CityLights.Renderer": {
+      "commandName": "Project",
+      "commandLineArgs": "51"
+    }
+  }
+}
