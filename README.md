@@ -50,7 +50,7 @@
 
 Requirements:
 =============
-You need a machine with at least 32GB of RAM render the Solidity images.
+You need a machine with at least 32GB of RAM to render the Solidity images.
 
 Dependencies:
 =============
