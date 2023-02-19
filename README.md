@@ -62,10 +62,13 @@ Rendering:
 =========
 
 1. After cloning the repository, ensure you have also cloned dependencies:
+
 `git submodule update --init --recursive`
 
 2. Follow the steps in `./solidity/README.md` to set up the mochi rendering node and deploy the contracts
+
 3. Follow the steps in `./CityLights.Renderer/README.md` to set up the rendering service to create your images
+
 4. Render and enjoy!
 
 Font Attribution:
