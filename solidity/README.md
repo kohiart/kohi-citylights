@@ -52,15 +52,19 @@ Deploy Steps
 ============
 
 1. Install dependencies:
+
 `npm install`
 
 2. Add a symlink to the Kohi contracts in this repository, or copy them into `./solidity/contracts/Kohi`:
+
 `mklink /D "[PATH_TO_THIS_REPO]\solidity\contracts\Kohi" "[PATH_TO_THIS_REPO]\lib\kohi-composer\solidity\contracts"`
 
 3. Start mochi container:
+
 `docker compose -f "docker\docker-compose.yml" up -d --build`
 
 4. Deploy to mochi:
+
 `npx hardhat --network mochi deploy`
 
 At the end of this process, the manifest file is copied to `./CityLights.Renderer`, where it is used in rendering.
