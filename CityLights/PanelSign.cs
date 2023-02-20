@@ -48,12 +48,12 @@ public sealed class PanelSign
         {
             c = Color.FromArgb(225, 225, 225);
 
-            var strokeWidth = 0.5f * scale;
+            var strokeWidth = Fix64.Mul(2147483648 /* 0.5 */, scale * Fix64.One);
             DrawRect(g, transform, height, strokeWidth, boxLeft, boxTop, boxRight, boxBottom, c);
         }
         else
         {
-            var strokeWidth = 1 * scale;
+            var strokeWidth = Fix64.Mul(Fix64.One, scale * Fix64.One);
             DrawRect(g, transform, height, strokeWidth, boxLeft, boxTop, boxRight, boxBottom, c);
         }
     }
@@ -111,7 +111,7 @@ public sealed class PanelSign
         stringPrinter.Origin = origin;
     }
 
-    private static void DrawRect(Graphics2D g, Matrix m, int height, float strokeWidth, long boxLeft, long boxTop,
+    private static void DrawRect(Graphics2D g, Matrix m, int height, long strokeWidth, long boxLeft, long boxTop,
         long boxRight,
         long boxBottom, Color c)
     {
@@ -138,7 +138,7 @@ public sealed class PanelSign
         line.LineTo(v3.X, v3.Y);
         line.LineTo(v0.X, v0.Y);
 
-        var boxOutline = new Stroke(line.Vertices(), (long) (strokeWidth * Fix64.One));
+        var boxOutline = new Stroke(line.Vertices(), strokeWidth);
         Graphics2D.Render(g, Stroke.Vertices(boxOutline).ToList(), c.ToUInt32());
     }
 }
