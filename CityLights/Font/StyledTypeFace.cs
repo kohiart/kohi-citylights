@@ -34,8 +34,8 @@ public class StyledTypeFace
         }
     }
 
-    public float GetAdvanceForCharacter(string line, int index)
+    public long GetAdvanceForCharacter(string line, int index)
     {
-        return _typeFace.GetAdvanceForCharacter(line[index]) * (EmScaling / (float) Fix64.One);
+        return Fix64.Mul(_typeFace.GetAdvanceForCharacter(line[index]) * Fix64.One, EmScaling);
     }
 }

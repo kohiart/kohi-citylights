@@ -91,8 +91,7 @@ public class TypeFacePrinter
             }
 
             // get the advance for the next character
-            currentOffset.X = Fix64.Add(currentOffset.X,
-                (long) (Style.GetAdvanceForCharacter(Text, currentChar) * Fix64.One));
+            currentOffset.X = Fix64.Add(currentOffset.X, Style.GetAdvanceForCharacter(Text, currentChar));
 
             vertexGroups.Add(vertexGroup.ToArray());
         }
@@ -108,13 +107,16 @@ public class TypeFacePrinter
             Y = Style.EmSizeInPixels
         };
 
-        float currentLineX = 0;
+        long currentLineX = 0;
 
         for (var i = 0; i < text.Length; i++)
         {
-            currentLineX += Style.GetAdvanceForCharacter(text, i);
+            currentLineX = Fix64.Add(currentLineX, Style.GetAdvanceForCharacter(text, i));
 
-            if (currentLineX * Fix64.One > offset.X) offset.X = (long) (currentLineX * Fix64.One);
+            if (currentLineX > offset.X)
+            {
+                offset.X = currentLineX;
+            }
         }
 
         return offset;

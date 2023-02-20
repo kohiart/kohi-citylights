@@ -23,8 +23,7 @@ public sealed class CityLightsParameters
 
         Words = WordList.Init(this);
         Sizes = SizeDistribution.Init(prng);
-        ShadowPanels = CityPanel.InitShadowPanels(prng, artwork.Width, artwork.Height, scale, Sizes,
-            CityLightsPalette.GetShadowPalette(), Words);
+        ShadowPanels = CityPanel.InitShadowPanels(prng, artwork.Width, artwork.Height, scale, Sizes, CityLightsPalette.GetShadowPalette(), Words);
         CityPanels = CityPanel.InitCityPanels(prng, artwork.Width, artwork.Height, scale, Sizes, palette, Words);
 
         RootBg1 = palette[RandomV1.Next(prng, palette.Length)];
