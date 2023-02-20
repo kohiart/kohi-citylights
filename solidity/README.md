@@ -59,11 +59,15 @@ Deploy Steps
 
 `mklink /D "[PATH_TO_THIS_REPO]\solidity\contracts\Kohi" "[PATH_TO_THIS_REPO]\lib\kohi-composer\solidity\contracts"`
 
-3. Start mochi container:
+3. Build the sources:
+
+`npx hardhat compile`
+
+4. Start mochi container:
 
 `docker compose -f "docker\docker-compose.yml" up -d --build`
 
-4. Deploy to mochi:
+5. Deploy to mochi:
 
 `npx hardhat --network mochi deploy`
 
